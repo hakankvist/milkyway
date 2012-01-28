@@ -1,0 +1,11 @@
+# Information about slackware mirroring:
+# http://slackware.com/getslack/mirroring_guidelines.txt
+name = slackware
+
+remote_server = ftp.slackware.change.this # change
+remote_dir = /slackware/
+
+sync_how_often = 24h
+
+destination_dir = /interblag/pub/slackware/
+

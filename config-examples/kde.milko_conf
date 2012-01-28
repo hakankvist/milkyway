@@ -1,0 +1,11 @@
+# Information for mirroring:
+# http://kde.org/mirrors/ftp_howto.php
+name = kde
+
+remote_server = master.kde.org
+remote_dir = /kdeftp/
+
+sync_how_often = 12h
+
+destination_dir = /interblag/pub/kde/
+

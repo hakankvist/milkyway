@@ -1,0 +1,11 @@
+# Mirror information for opera:
+# http://www.opera.com/download/mirrors/specs/
+
+name = opera
+
+remote_server = mirror.opera.com
+remote_dir = /pub-opera/
+
+sync_how_often = 10m
+destination_dir = /interblag/pub/opera/
+

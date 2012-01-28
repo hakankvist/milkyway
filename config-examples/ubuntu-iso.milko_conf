@@ -1,0 +1,11 @@
+name = ubuntu-iso
+
+remote_server = ftp-server.change.me # change this.
+remote_dir = /ubuntu-releases/
+
+# This project is prioritized
+priority=3
+
+sync_how_often = 3h
+
+destination_dir = /interblag/pub/ubuntu-iso/

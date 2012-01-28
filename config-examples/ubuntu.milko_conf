@@ -1,0 +1,39 @@
+# Sync Ubuntu using two step mirroring.
+
+name = ubuntu
+
+remote_server = changeme.archive.ubuntu.com # Select aproporiate server
+remote_dir = /ubuntu/
+
+destination_dir = /interblag/pub/ubuntu/
+
+# This project is prioritized, people wants their fresh packages
+priority=3
+
+# This is a two stage sync, just as for debian.
+two_stage_sync = 1
+
+# After syncing, create a timestamp file (debian/ubuntu specific).
+# This file must be ignored by rsync.
+# Replace ftp.my.host.change with the name of your ftp-server.
+ignore_items = project/trace/ftp.my.host.changeme
+time_stamp_file = project/trace/ftp.my.host.changeme
+
+# Sync every 4th hour
+sync_how_often = 4h
+
+# Information about how to fetch taken from:
+# https://lists.ubuntu.com/archives/ubuntu-mirrors-announce/2006-August/000002.html
+
+#sync everything, default
+#first_sync_dir =
+first_ignore_items = Packages*, Sources*, Release*
+first_delete = 0
+
+# default sync everything
+# second_sync_dir =
+# nothing to ignore, default value
+# second_ignore_items =
+# delete after is default:
+# first_delete = 1
+

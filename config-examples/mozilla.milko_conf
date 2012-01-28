@@ -1,0 +1,15 @@
+# Information about becomming mirror:
+# http://www.mozilla.org/community/mirroring.html
+
+name = mozilla
+
+# This project is prioritized, set highest prio
+priority=1
+
+remote_server = releases-rsync.mozilla.org
+remote_dir = /mozilla-releases/
+
+sync_how_often = 15m
+
+destination_dir = /interblag/pub/mozilla/
+

@@ -1,0 +1,22 @@
+# Information about how to mirror debian:
+# http://www.debian.org/mirror/ftpmirror
+
+name = debian-iso
+
+remote_server = ftp.XX.debian.org # change this.
+remote_dir = /debian-iso/
+
+# This project is prioritized
+priority=3
+
+destination_dir = /interblag/pub/debian-iso/
+
+# After rsync is done mirroring, add a time stamp file to the project/trace/ 
+# subdirectory of the Debian mirror named after your server. This means running 
+# date -u > .../debian/project/trace/your.server  after your daily rsync is finished.
+
+#never delete this file
+ignore_items = project/trace/ftp.mymachine.change.me.now # change this
+
+time_stamp_file = project/trace/ftp.mymachine.change.me.now # change this
+

@@ -1,0 +1,11 @@
+# Contact information here:
+# http://wiki.aminet.net/Main_Page
+name = aminet
+
+remote_server = aminet-mirror-change-me
+remote_dir = /aminet/
+
+sync_how_often = 24h
+
+destination_dir = /interblag/pub/aminet/
+

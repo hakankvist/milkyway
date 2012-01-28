@@ -1,0 +1,12 @@
+# Mirror information at bottom of page:
+# http://www.yellowdoglinux.com/resources/ftp_mirrors.shtml
+
+name = yellowdog
+remote_server= rsync.yellowdoglinux.mirror # Choose an apporporiate server
+remote_dir = /ftp.yellowdoglinux.com/pub/yellowdog/
+
+# every 24 hours
+sync_how_often = 24h
+
+destination_dir = /interblag/pub/yellowdog/
+

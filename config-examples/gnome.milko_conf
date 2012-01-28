@@ -1,0 +1,15 @@
+# Details about gnome mirroring:
+# http://sysadmin.gnome.org/mirrors.html
+
+name = gnome
+
+remote_server = change.me.rsync.server.gnome # change this
+remote_dir = /gnomeftp/
+
+rsync_username = secret_user     # change this
+rsync_password = secret_password # change this
+
+sync_how_often = 8h
+
+destination_dir = /interblag/pub/gnome/
+

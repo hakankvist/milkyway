@@ -1,0 +1,15 @@
+# For information about mirroring see the bottom of the page:
+# http://www.openbsd.org/ftp.html
+
+name = openbsd
+
+remote_server = ftp.su.se.change-me-now # change this.
+remote_dir = /OpenBSD/
+destination_dir = /interblag/pub/OpenBSD/
+
+sync_how_often = 12h
+
+# Ignore the ftp.su.se README file, so that we can replace it
+# with our own.
+ignore_items = /README
+

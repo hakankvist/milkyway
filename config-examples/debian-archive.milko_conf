@@ -1,0 +1,41 @@
+# Information about how to mirror debian:
+# http://www.debian.org/mirror/ftpmirror
+#
+# Note, debian uses two stage mirroring
+
+name = debian-archive
+
+remote_server = ftp.XX.debian.org # change this
+remote_dir = /debian-archive/
+
+sync_how_often = 48h
+
+destination_dir = /interblag/pub/debian-archive/
+
+# Two stage sync is the shit!
+#
+
+two_stage_sync = 1
+
+# information about how to fetch taken from:
+# http://www.debian.org/mirror/ftpmirror
+
+#first_sync_dir =
+first_ignore_items = Packages*, Sources*, Release*, InRelease, ls-lR*
+first_delete = 0
+
+second_sync_dir =
+second_ignore_items =
+second_delete = 1
+
+# After rsync is done mirroring, add a time stamp file to the project/trace/
+# subdirectory of the Debian mirror named after your server. This means running
+# date -u > .../debian/project/trace/your.server  after your daily rsync is finished.
+
+#never delete this file
+ignore_items = project/trace/ftp.mymachine.change.me.now # change this
+
+time_stamp_file = project/trace/ftp.mymachine.change.me.now # change this
+
+# not so interesting...
+priority=1000

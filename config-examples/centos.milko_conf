@@ -1,0 +1,17 @@
+# How to mirror:
+# http://www.centos.org/modules/tinycontent/index.php?id=22
+name = centos
+
+remote_server = eu-msync.centos.org.change # change this
+remote_dir = /CentOS/
+
+# This project is prioritized
+priority=1
+
+# 2-4 times a day, here it is 3
+sync_how_often = 8
+
+destination_dir = /interblag/pub/centos/
+
+# no compression (default)
+rsync_compress = 0

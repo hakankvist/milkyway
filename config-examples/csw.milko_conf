@@ -1,0 +1,10 @@
+# Information about mirroring:
+# http://www.opencsw.org/get-it/mirrors/
+name = csw
+
+remote_server =  rsync.opencsw.org
+remote_dir = /csw/
+
+sync_how_often = 24
+
+destination_dir = /interblag/pub/csw/

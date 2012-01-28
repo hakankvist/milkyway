@@ -1,0 +1,21 @@
+name = pcbsd
+
+# Information about how to mirror:
+# http://wiki.pcbsd.org/index.php/Host_a_Mirror
+
+remote_server = isc.pcbsd.org
+remote_dir = /ftp/
+
+
+# sync at XX:00 (always)
+sync_at_time = XX:00 # change this after contacting the pcbsd project, see wiki page
+
+# if sync has not been successful for the last 25 hours sync again.
+sync_how_often = 25
+
+destination_dir = /interblag/pub/PCBSD/
+
+# Use compression (z) option according to information on:
+# http://wiki.pcbsd.org/index.php/Host_a_Mirror
+rsync_compress = 1
+
